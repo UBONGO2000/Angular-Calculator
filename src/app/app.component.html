@@ -1,34 +1,36 @@
 <div class="flex flex-col min-w-screen min-h-screen p-5 justify-center items-center tex-gray relative shadow-xl bg-teal-900">
   <div class="w-full text-gray-800 relative overflow-hidden shadow-xl max-w-[350px]">
-    <h1 class="text-white text-bold mb-5 text-5xl">ANGULAR CALCULATOR</h1>
-    <!-- screen calculator -->
-    <div class="container overflow-hidden relative max-w-[350px]">
-      <div class="w-full text-right bg-gradient-to-b from-gray-800  to-gray-700 text-white p-5 " id="display">
-        FUNCTION
-      </div>
-    <!-- end calculator screen -->
+    <h1 class="text-white text-bold mb-5 text-3xl">ANGULAR CALCULATOR</h1>
+    <!--  calculator screen-->
+    <div class="w-full h-40 bg-gradient-to-b from-gray-800 to-gray-700 text-right">
+        <div class="w-full text-right text-white p-5 " id="display">
+          FUNCTION
+        </div>
+      <!-- end calculator screen -->
+
+      <!-- number screen -->
+
+        <div class="w-full py-5 px-6 text-6xl text-white font-thin">
+            100
+        </div>
+      <!-- end number screen -->
+    </div>
 
     <!-- calculator button area -->
      <div class="w-full bg-gradient-to-b from-red-500 to-red-800">
-          <!-- first button row  -->
-      <div class="flex w-full">
-        <!-- clear button -->
-              <div class="w-2/4 border-r border-b border-red-400">
-                  <button class="w-full h-16 outline-none hover:bg-red-700 hover:bg-opacity-20 text-white text-opacity-50 text-xl font-light">
-                    C
-                  </button>
-              </div>
-        <!-- end clear button -->
-        
-        <!-- new button -->
-        <div class="w-1/4 border-r border-b border-red-400">
-          <button class="w-full h-16 outline-none hover:bg-red-700 hover:bg-opacity-20 text-white text-opacity-50 text-xl font-light">
-            CE
-          </button>
-        </div>
 
-          <!-- </div> -->
+        
      </div>
+
+     <app-firstrow>/>
+      
+      <app-secondrow/>
+
+      <app-thirdrow/>
+
+      <app-fourthrow/>
+
+      
   </div>
     
   
