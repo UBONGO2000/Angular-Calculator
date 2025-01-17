@@ -1,34 +1,36 @@
 <div class="flex flex-col min-w-screen min-h-screen p-5 justify-center items-center tex-gray relative shadow-xl bg-teal-900">
   <div class="w-full text-gray-800 relative overflow-hidden shadow-xl max-w-[350px]">
-    <h1 class="text-white text-bold mb-5 text-3xl">ANGULAR CALCULATOR</h1>
+    <h1 class="text-white text-bold mb-5 text-3xl justify-center">ANGULAR CALCULATOR</h1>
     <!--  calculator screen-->
     <div class="w-full h-40 bg-gradient-to-b from-gray-800 to-gray-700 text-right">
         <div class="w-full text-right text-white p-5 " id="display">
-          FUNCTION
+          {{calculatorService.funcT}}
         </div>
       <!-- end calculator screen -->
 
       <!-- number screen -->
 
         <div class="w-full py-5 px-6 text-6xl text-white font-thin">
-            100
+            {{calculatorService.screen}}
         </div>
       <!-- end number screen -->
     </div>
 
-    <!-- calculator button area -->
-     <div class="w-full bg-gradient-to-b from-red-500 to-red-800">
-
+      <!-- calculator button area -->
+    <div class="w-full bg-gradient-to-b from-red-500 to-red-800">
         
-     </div>
-
-     <app-firstrow>/>
+      <app-firstrow/>
       
       <app-secondrow/>
 
       <app-thirdrow/>
 
       <app-fourthrow/>
+
+      <app-fivethrow/>
+
+    </div>
+
 
       
   </div>
